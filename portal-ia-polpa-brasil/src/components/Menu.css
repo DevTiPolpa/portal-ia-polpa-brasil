@@ -1,0 +1,43 @@
+.menu {
+    width: 95%;
+    height: 80px;
+
+    margin: 20px auto;
+
+    background: #f9f5dc;
+
+    border-radius: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+    box-sizing: border-box;
+}
+
+.menu__logo img {
+    height: 45px;
+}
+
+.menu__nav {
+    display: flex;
+    gap: 40px;
+}
+
+.menu__nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu__nav a:hover {
+    color: #5aa020;
+}
+
+.menu__language {
+    font-weight: bold;
+    cursor: pointer;
+}
