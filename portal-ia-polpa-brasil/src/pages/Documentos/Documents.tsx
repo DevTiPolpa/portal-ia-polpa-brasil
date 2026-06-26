@@ -20,19 +20,19 @@ const documents: Document[] = [
   {
     id: 2,
     title: "Diagnóstico de Maturidade em IA",
-    description: "Documento para consulta",
+    description: "Em construção",
     file: "",
     route: "",
   }, 
   {
     id: 3,
     title: "Funil de IA",
-    description: "Documento para consulta",
+    description: "Em construção",
     file: "",
     route: "",
   }
 
-  
+
 ];
 
 function Documents() {
