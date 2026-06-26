@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Documents.css";
 
 interface Document {
@@ -5,21 +6,37 @@ interface Document {
   title: string;
   description: string;
   file: string;
+  route: string;
 }
 
 const documents: Document[] = [
   {
     id: 1,
-    title: "Manual do Sistema",
-    description: "Manual completo de utilização.",
+    title: "Política de Governança de Inteligência Artificial",
+    description: "Documento para consulta",
     file: "https://drive.google.com/file/d/1D4kMCQJadOA-rEJvOS7JLD2mdqHYWheo/view?usp=sharing",
+    route: "https://drive.google.com/file/d/1D4kMCQJadOA-rEJvOS7JLD2mdqHYWheo/view?usp=sharing",
+   },
+  {
+    id: 2,
+    title: "Diagnóstico de Maturidade em IA",
+    description: "Documento para consulta",
+    file: "",
+    route: "",
+  }, 
+  {
+    id: 3,
+    title: "Funil de IA",
+    description: "Documento para consulta",
+    file: "",
+    route: "",
   }
+
 ];
 
 function Documents() {
   return (
     <div className="documents">
-      <h1>Documentos</h1>
 
       <div className="documents-list">
         {documents.map((document) => (
@@ -27,9 +44,9 @@ function Documents() {
             <h3>{document.title}</h3>
             <p>{document.description}</p>
 
-            <a href={document.file} target="_blank" rel="noreferrer">
+            <Link to={document.route} target="_blank">
               Visualizar
-            </a>
+            </Link>
           </div>
         ))}
       </div>
