@@ -27,9 +27,9 @@ const documents: Document[] = [
   {
     id: 3,
     title: "Funil de IA",
-    description: "Em construção",
+    description: "Portal de Análise de Projetos IA",
     file: "",
-    route: "",
+    route: "https://polpaia-iyny5pyo.manus.space/",
   }
 
 
