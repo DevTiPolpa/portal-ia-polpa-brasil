@@ -20,9 +20,9 @@ const documents: Document[] = [
   {
     id: 2,
     title: "Diagnóstico de Maturidade em IA",
-    description: "Em construção",
+    description: "Mapeamento de Maturidade em IA",
     file: "",
-    route: "",
+    route: "https://polpadiag-iiyowmgs.manus.space/diagnostico",
   }, 
   {
     id: 3,
